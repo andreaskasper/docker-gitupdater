@@ -2,6 +2,8 @@ FROM debian:latest
 
 LABEL MAINTAINER="Andreas Kasper <andreas.kasper@goo1.de>"
 
+ENV SLEEP="60s"
+
 ENTRYPOINT ["/entrypoint.sh"]
 
 RUN apt-get -y update \
